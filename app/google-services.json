@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "921506520485",
+    "firebase_url": "https://betaar-348dc.firebaseio.com",
+    "project_id": "betaar-348dc",
+    "storage_bucket": "betaar-348dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921506520485:android:2977277ee9e6cbc8",
+        "android_client_info": {
+          "package_name": "ranglerz.veterinaryandpatient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921506520485-litqmg7bi6dtkuaej29c85214crehglk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ranglerz.veterinaryandpatient",
+            "certificate_hash": "5f57386e761baeafb52c64868974b79af2d45a21"
+          }
+        },
+        {
+          "client_id": "921506520485-0v8f78fe15icugnen661oe7p2aj38bo0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzBtGoUWYGxsVibIdqKLUslwclwkUp788"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921506520485-0v8f78fe15icugnen661oe7p2aj38bo0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

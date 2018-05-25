@@ -1,0 +1,351 @@
+<resources>
+    <string name="app_name">BETAAR</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity">FAB_Menu</string>
+    <string name="title_veterinary">Veterinarian</string>
+    <string name="title_sale_products">Sale Products</string>
+
+
+    <string-array name="qualification_type">
+        <item>Select</item>
+        <item>LAD</item>
+        <item>DVM</item>
+    </string-array>
+
+
+    <string-array name="product_types">
+        <item>Select Product Type</item>
+        <item>Dairy Solution</item>
+        <item>Pet Solution</item>
+        <item>Equine Solution</item>
+        <item>Birds Solution</item>
+        <item>Wild Life Solution</item>
+
+    </string-array>
+
+    <string-array name="product_categories_for_dairy">
+        <item>Select Category</item>
+        <item>Accesories</item>
+        <item>Feed</item>
+        <item>Animals (sale &amp; pur)</item>
+        <item>Milking Parlour</item>
+        <item>Medicine Products</item>
+        <item>Shed Constructions</item>
+        <item>Labs</item>
+        <item>Labour</item>
+        <item>Land on Rent</item>
+        <item>Sprays</item>
+        <item>Milk (sale &amp; purc)</item>
+        <item>Dairy Crops Seed</item>
+
+    </string-array>
+
+
+    <string-array name="product_categories_for_pets">
+        <item>Select Category</item>
+        <item>Accesories</item>
+        <item>Feed</item>
+        <item>Animals (sale &amp; pur)</item>
+        <item>Vaccination</item>
+        <item>Medicine Products</item>
+        <item>Shed Constructions</item>
+        <item>Labs</item>
+        <item>Labour</item>
+        <item>Pet Trainer</item>
+        <item>Breeder Services</item>
+
+    </string-array>
+
+    <string-array name="product_categories_for_equine">
+        <item>Select Category</item>
+        <item>Accesories</item>
+        <item>Feed</item>
+        <item>Animals (sale &amp; pur)</item>
+        <item>Milking Parlour</item>
+        <item>Medicine Products</item>
+        <item>Shed Constructions</item>
+        <item>Labs</item>
+        <item>Labour</item>
+        <item>Horse Trainer</item>
+        <item>Breede Services</item>
+    </string-array>
+
+
+    <string-array name="product_categories_for_bird">
+        <item>Select Category</item>
+        <item>Accesories</item>
+        <item>Feed</item>
+        <item>Animals (sale &amp; pur)</item>
+        <item>Vaccination</item>
+        <item>Medicine Products</item>
+        <item>Shed Constructions</item>
+        <item>Labs</item>
+        <item>Labour</item>
+        <item>Land On Rent</item>
+        <item>Pesticides</item>
+        <item>Milk (sale &amp; purc)</item>
+        <item>Dairy Crops Seed</item>
+
+    </string-array>
+
+    <string-array name="product_categories_for_other">
+        <item>Select Category</item>
+        <item>Accesories</item>
+        <item>Feed</item>
+        <item>Animals (sale &amp; pur)</item>
+        <item>Vaccination</item>
+        <item>Medicine Products</item>
+        <item>Shed Constructions</item>
+        <item>Labs</item>
+        <item>Labour</item>
+
+    </string-array>
+
+
+    <string-array name="product_sub_categories_for_dairy_accesories">
+        <item>Select Sub Category</item>
+        <item>Surgical Instruments</item>
+        <item>Fooder Cutting Machine</item>
+        <item>Fans/Shower</item>
+        <item>Tags/Tag Markers</item>
+        <item>Calf Cages/Mats</item>
+        <item>TMR/Tractor/Trolley</item>
+        <item>Bio-Gas Plant</item>
+        <item>Cattle Crush</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="product_sub_categories_for_dairy_feed">
+        <item>Select Sub Category</item>
+        <item>Silage</item>
+        <item>Fresh Fooder</item>
+        <item>Wanda</item>
+        <item>Wanda Ingredient</item>
+        <item>Hay/Beet Plup</item>
+        <item>Wheat Straw</item>
+        <item>Feed Additives</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="product_sub_categories_for_dairy_animals">
+        <item>Select Sub Category</item>
+        <item>Local Dairy Cows</item>
+        <item>Imported Dairy Cows</item>
+        <item>Buffalo</item>
+        <item>Sheep</item>
+        <item>Goat</item>
+        <item>Bulls</item>
+        <item>Qurban Animals For Eid</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="product_sub_categories_for_dairy_milking_parlour">
+        <item>Select Sub Category</item>
+        <item>Mobile Machines</item>
+        <item>Milking rows</item>
+        <item>Milking Parlour</item>
+        <item>Spare Partst</item>
+        <item>Acid/Alkali For CIP</item>
+        <item>Teat Dip Solutions</item>
+        <item>Chillers</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="product_sub_categories_for_dairy_medicine_products">
+        <item>Select Sub Category</item>
+        <item>Vaccinations</item>
+        <item>Dewormer</item>
+        <item>Antibiotics</item>
+        <item>Hormones</item>
+        <item>NSAIDS/Steroids</item>
+        <item>Supportive</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="product_sub_categories_for_dairy_sheed_construction">
+        <item>Select Sub Category</item>
+        <item>Open Shed</item>
+        <item>Semi Control Shed</item>
+        <item>Control Shed</item>
+        <item>Desi Structure</item>
+        <item>Shed Material</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="product_sub_categories_for_dairy_labs">
+        <item>Select Sub Category</item>
+        <item>Feed Analysis</item>
+        <item>Blood Analysis</item>
+        <item>Fecal Analysis</item>
+        <item>X-Rays</item>
+        <item>Ultrasounds</item>
+        <item>Water Analysis</item>
+    </string-array>
+
+    <string-array name="product_sub_categories_for_dairy_labour">
+        <item>Select Sub Category</item>
+        <item>Milker</item>
+        <item>Feeding Boy</item>
+        <item>Supervisor</item>
+        <item>Thekedar</item>
+        <item>Cook</item>
+        <item>Security Guard</item>
+        <item>Electrician/Welder</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="product_sub_categories_for_dairy_land_on_rent">
+        <item>Select Sub Category</item>
+        <item>Shed For Rent</item>
+        <item>Agriculture Land For Rent</item>
+
+
+    </string-array>
+
+    <string-array name="product_sub_categories_for_dairy_sprays">
+        <item>Select Sub Category</item>
+        <item>Pesticides</item>
+        <item>Insecticides</item>
+        <item>Disinfectants</item>
+        <item>Bactericidal</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="product_sub_categories_for_dairy_milk_sale_pur">
+        <item>Select Sub Category</item>
+        <item>Cow Milk</item>
+        <item>Buffalo Milk</item>
+        <item>Goat Milk</item>
+        <item>Camel Milk</item>
+        <item>Cow &amp; Buffalo Milk</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="product_sub_categories_for_dairy_crops_seed">
+        <item>Select Sub Category</item>
+        <item>Corn</item>
+        <item>Alfalfa</item>
+        <item>Sorghum</item>
+        <item>Oats</item>
+        <item>Rhodes Grass</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="product_categories">
+        <item>Select Category</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+        <item>Category 6</item>
+        <item>Category 7</item>
+        <item>Category 8</item>
+
+    </string-array>
+
+
+    <string-array name="dairy_categories">
+        <item>Select Dairy Category</item>
+        <item>Cow</item>
+        <item>Buffalo</item>
+        <item>Sheep</item>
+        <item>Goat</item>
+    </string-array>
+
+    <string-array name="pets_categories">
+        <item>Select Pet Category</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Rabbit</item>
+    </string-array>
+
+    <string-array name="quine_categories">
+        <item>Select Equine Category</item>
+        <item>Horse</item>
+        <item>Donkey</item>
+        <item>Mule</item>
+    </string-array>
+
+
+    <string-array name="birds_categories">
+        <item>Select Birds Category</item>
+        <item>Layer</item>
+        <item>Broiler</item>
+        <item>Ostrich</item>
+        <item>Poultry Birds</item>
+        <item>Fancy Birds</item>
+    </string-array>
+
+    <string-array name="other_solution">
+        <item>Select Category</item>
+        <item>Fish</item>
+        <item>Lion</item>
+        <item>Deer</item>
+        <item>Monkey</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="job_categories">
+        <item>Select Job Category</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+        <item>Category 6</item>
+        <item>Category 7</item>
+        <item>Category 8</item>
+
+    </string-array>
+
+    <string-array name="salary_range">
+        <item>Select Salary Range</item>
+        <item>5000-15000</item>
+        <item>1500-25000</item>
+        <item>2500-40000</item>
+        <item>40000-64000</item>
+        <item>65000-80000</item>
+        <item>80000-100000</item>
+        <item>100000+</item>
+
+    </string-array>
+
+    <string name="title_activity_verification_for_client">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing emailcompletions."</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="place_key">AIzaSyCW64V0Ugrz0KC2wBpwnZeAgL79Q4nHyKg</string>
+
+    <string name="startpecefullift">Start a Peacefull Life With</string>
+    <string name="descriptiontext">The Betaar Company is the largest, most impressive, creative and forward-thinking Veterinary service provider company in Pakistan. At the core of your business philosophy is a commitment to extraordinary service, honesty, and clear communication.
+In brief. You will feel the difference as soon as you walk into our offices, speak with us on the telephone, or meet us in person. Our experienced broker agents, qualified agents, and a lot of the time support staff are friendly, knowledgeable, and very hard-working. All of us incorporate the best in good old-fashioned customer support with the most recent and best in technology and web-affiliated marketing.</string>
+
+    <string name="ourmission">OUR MISSION</string>
+    <string name="ouragents">OUR AGENTS</string>
+    <string name="ourmissiondescrption">Our mission is to provide the highest level of service to our clients to help them on demand.</string>
+    <string name="ouragentdescription">Our Agents are all long time Whistler locals and are experts in both the area and the treatment market.</string>
+    <string name="ourvision">OUR VISION</string>
+    <string name="ourvisiondescription">Betaar is a regional, providing full-service quality. Betaar will find you the best veterinary nearby you.</string>
+    <string name="value">VALUES</string>
+    <string name="valuedescription">We always do what is right, and ethical. We share appropriate information in an honest. We are positive and enthusiastic.</string>
+
+
+    <string name="description_text_for_contact_us">We Collect the minimum amount of information about you that is commensurate with providing you satification services. This policy indicate the type of processes tha may result in data being collected about you. Your use of this app give us the right to collect the information</string>
+
+</resources>
