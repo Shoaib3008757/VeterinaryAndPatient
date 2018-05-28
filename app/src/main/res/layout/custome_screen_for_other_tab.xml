@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
         android:fontFamily="serif"
-        android:text="Other Solution"
+        android:text="Wild Life Solution"
         android:textColor="@color/colorWhite"
         android:textSize="22sp"
         android:textStyle="bold" />

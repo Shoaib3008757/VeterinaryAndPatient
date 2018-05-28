@@ -462,6 +462,7 @@ public class OrganizationSaleProductActivity extends AppCompatActivity {
                     adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                     sp_select_product_category.setAdapter(adapterProductCategory);
                     rl_spiner_product_category.setVisibility(View.VISIBLE);
+                    rl_spiner_product_sub_category.setVisibility(View.GONE);
 
                 }
 
@@ -473,6 +474,7 @@ public class OrganizationSaleProductActivity extends AppCompatActivity {
                     adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                     sp_select_product_category.setAdapter(adapterProductCategory);
                     rl_spiner_product_category.setVisibility(View.VISIBLE);
+                    rl_spiner_product_sub_category.setVisibility(View.GONE);
 
                 }
 
@@ -484,6 +486,7 @@ public class OrganizationSaleProductActivity extends AppCompatActivity {
                     adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                     sp_select_product_category.setAdapter(adapterProductCategory);
                     rl_spiner_product_category.setVisibility(View.VISIBLE);
+                    rl_spiner_product_sub_category.setVisibility(View.GONE);
 
                 }
 
@@ -495,6 +498,7 @@ public class OrganizationSaleProductActivity extends AppCompatActivity {
                     adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                     sp_select_product_category.setAdapter(adapterProductCategory);
                     rl_spiner_product_category.setVisibility(View.VISIBLE);
+                    rl_spiner_product_sub_category.setVisibility(View.GONE);
 
                 }
             }

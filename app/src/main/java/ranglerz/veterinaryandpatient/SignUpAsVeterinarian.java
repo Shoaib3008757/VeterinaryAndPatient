@@ -76,13 +76,10 @@ public class SignUpAsVeterinarian extends AppCompatActivity implements GoogleApi
     Animation rotate;
     LatLng mLatLng = null;
 
-
     private Location mylocation;
     private GoogleApiClient googleApiClient;
     private final static int REQUEST_CHECK_SETTINGS_GPS = 0x1;
     private final static int REQUEST_ID_MULTIPLE_PERMISSIONS=0x2;
-
-
 
     private static final int REQUEST_FINE_LOCATION = 11;
 
@@ -95,7 +92,6 @@ public class SignUpAsVeterinarian extends AppCompatActivity implements GoogleApi
         init();
         btRegisterButtonClickHandler();
 
-
         Intent i = getIntent();
         double lat = i.getExtras().getDouble("LAT");
         double lng = i.getExtras().getDouble("LNG");
@@ -103,7 +99,6 @@ public class SignUpAsVeterinarian extends AppCompatActivity implements GoogleApi
         Log.e("TAg", "the longitude from previouce activity is: " + lng);
 
         mLatLng = new LatLng(lat, lng);
-
 
         setUpGClient();
 
@@ -135,6 +130,7 @@ public class SignUpAsVeterinarian extends AppCompatActivity implements GoogleApi
         bt_register = (Button) findViewById(R.id.bt_register);
 
     }
+
 
     @Override
     protected void onResume() {
@@ -363,12 +359,10 @@ public class SignUpAsVeterinarian extends AppCompatActivity implements GoogleApi
         Matcher matcher;
 
         final String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-
         pattern = Pattern.compile(EMAIL_PATTERN);
         matcher = pattern.matcher(mailAddress);
         return matcher.matches();
     }
-
 
     private synchronized void setUpGClient() {
         googleApiClient = new GoogleApiClient.Builder(this)

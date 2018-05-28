@@ -28,7 +28,7 @@
         <item>Accesories</item>
         <item>Feed</item>
         <item>Animals (sale &amp; pur)</item>
-        <item>Milking Parlour</item>
+        <item>Milking Machines</item>
         <item>Medicine Products</item>
         <item>Shed Constructions</item>
         <item>Labs</item>
@@ -45,7 +45,7 @@
         <item>Select Category</item>
         <item>Accesories</item>
         <item>Feed</item>
-        <item>Animals (sale &amp; pur)</item>
+        <item>Pets (sale &amp; pur)</item>
         <item>Vaccination</item>
         <item>Medicine Products</item>
         <item>Shed Constructions</item>
@@ -60,8 +60,8 @@
         <item>Select Category</item>
         <item>Accesories</item>
         <item>Feed</item>
-        <item>Animals (sale &amp; pur)</item>
-        <item>Milking Parlour</item>
+        <item>Equine (sale &amp; pur)</item>
+        <item>Vaccinations</item>
         <item>Medicine Products</item>
         <item>Shed Constructions</item>
         <item>Labs</item>
@@ -75,16 +75,14 @@
         <item>Select Category</item>
         <item>Accesories</item>
         <item>Feed</item>
-        <item>Animals (sale &amp; pur)</item>
+        <item>Birds (sale &amp; pur)</item>
         <item>Vaccination</item>
         <item>Medicine Products</item>
-        <item>Shed Constructions</item>
+        <item>Cages/Sheds Cons</item>
         <item>Labs</item>
         <item>Labour</item>
-        <item>Land On Rent</item>
-        <item>Pesticides</item>
-        <item>Milk (sale &amp; purc)</item>
-        <item>Dairy Crops Seed</item>
+        <item>Egg (sale &amp; pur)</item>
+        <item>Shed for Rent</item>
 
     </string-array>
 
@@ -145,8 +143,8 @@
         <item>Select Sub Category</item>
         <item>Mobile Machines</item>
         <item>Milking rows</item>
-        <item>Milking Parlour</item>
-        <item>Spare Partst</item>
+        <item>Milking Machines</item>
+        <item>Spare Parts</item>
         <item>Acid/Alkali For CIP</item>
         <item>Teat Dip Solutions</item>
         <item>Chillers</item>
@@ -236,14 +234,14 @@
 
     <string-array name="product_categories">
         <item>Select Category</item>
-        <item>Category 1</item>
-        <item>Category 2</item>
-        <item>Category 3</item>
-        <item>Category 4</item>
-        <item>Category 5</item>
-        <item>Category 6</item>
-        <item>Category 7</item>
-        <item>Category 8</item>
+        <item>Dairy Farm job</item>
+        <item>Dairy Marketing job</item>
+        <item>Poultry Farm job</item>
+        <item>Poultry Marketing job</item>
+        <item>Zoo job</item>
+        <item>Equine farm job</item>
+        <item>Pet hospital job</item>
+        <item>Other</item>
 
     </string-array>
 
@@ -291,14 +289,14 @@
 
     <string-array name="job_categories">
         <item>Select Job Category</item>
-        <item>Category 1</item>
-        <item>Category 2</item>
-        <item>Category 3</item>
-        <item>Category 4</item>
-        <item>Category 5</item>
-        <item>Category 6</item>
-        <item>Category 7</item>
-        <item>Category 8</item>
+        <item>Dairy Farm job</item>
+        <item>Dairy Marketing job</item>
+        <item>Poultry Farm job</item>
+        <item>Poultry Marketing job</item>
+        <item>Zoo job</item>
+        <item>Equine farm job</item>
+        <item>Pet hospital job</item>
+        <item>Other</item>
 
     </string-array>
 

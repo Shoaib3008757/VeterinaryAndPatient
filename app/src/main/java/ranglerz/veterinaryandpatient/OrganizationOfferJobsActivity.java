@@ -27,7 +27,6 @@ public class OrganizationOfferJobsActivity extends AppCompatActivity {
 
     Button bt_submit;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +38,6 @@ public class OrganizationOfferJobsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         init();
         onSubmitButtonClickHanlder();
-
-
 
     }
 

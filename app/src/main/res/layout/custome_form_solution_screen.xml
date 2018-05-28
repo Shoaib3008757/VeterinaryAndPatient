@@ -169,7 +169,7 @@
                         android:layout_height="@dimen/et_width"
                         android:layout_centerInParent="true"
                         android:layout_gravity="center_horizontal"
-                        android:text="Milking Porlour"
+                        android:text="Milking Machine"
                         android:textAlignment="center"
                         android:textAllCaps="false"
                         android:textColor="@color/colorWhite"
