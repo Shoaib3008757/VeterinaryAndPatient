@@ -13,6 +13,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -21,6 +23,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -29,12 +32,14 @@ import ranglerz.veterinaryandpatient.CallVetForDairy;
 import ranglerz.veterinaryandpatient.ClientTabbtherSolution;
 import ranglerz.veterinaryandpatient.FarmSolutionForDairy;
 import ranglerz.veterinaryandpatient.R;
+import ranglerz.veterinaryandpatient.SaleAnimals;
 
 
 public class FragmentOther extends Fragment {
 
     Spinner sp_select_other;
-    RelativeLayout bt_call_a_veteriany, bt_farm_solutino;
+    RelativeLayout bt_call_a_veteriany, bt_farm_solutino, bt_sale_other;
+    RelativeLayout rl_spiner;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,6 +59,7 @@ public class FragmentOther extends Fragment {
         init(v);
         callingVeterinaryActivity();
         farmSolutionActivity();
+        btSaleDairyClickHanlder();
 
         return v;
     }
@@ -63,6 +69,8 @@ public class FragmentOther extends Fragment {
         sp_select_other = (Spinner) view.findViewById(R.id.sp_select_other);
         bt_call_a_veteriany = (RelativeLayout) view.findViewById(R.id.bt_call_a_veteriany);
         bt_farm_solutino = (RelativeLayout) view.findViewById(R.id.bt_farm_solutino);
+        bt_sale_other = (RelativeLayout) view.findViewById(R.id.bt_sale_other);
+        rl_spiner = (RelativeLayout) view.findViewById(R.id.rl_spiner);
 
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(),
@@ -94,6 +102,31 @@ public class FragmentOther extends Fragment {
                 Intent farmSolution = new Intent(getActivity(), ClientTabbtherSolution.class);
                 farmSolution.putExtra("from", "other");
                 getActivity().startActivity(farmSolution);
+            }
+        });
+    }
+
+    private void btSaleDairyClickHanlder(){
+
+        bt_sale_other.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                final Animation animShake = AnimationUtils.loadAnimation(getActivity(), R.anim.shake);
+
+                int item_position = sp_select_other.getSelectedItemPosition();
+                if (item_position == 0){
+                    ((TextView)sp_select_other.getSelectedView()).setError("Please Select Category");
+                    rl_spiner.setAnimation(animShake);
+
+                }else {
+                    String selectedItem = sp_select_other.getSelectedItem().toString();
+                    Intent i = new Intent(getActivity(), SaleAnimals.class);
+                    i.putExtra("type", "Other");
+                    i.putExtra("item", selectedItem);
+                    startActivity(i);
+
+                }
             }
         });
     }

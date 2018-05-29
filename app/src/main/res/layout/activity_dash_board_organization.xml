@@ -133,6 +133,7 @@
                             app:srcCompat="@drawable/ic_offerjobs"
                             android:tint="@color/colorBlue"
                             android:layout_gravity="center_horizontal"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

@@ -3,7 +3,7 @@
     package="ranglerz.veterinaryandpatient">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
@@ -157,10 +157,13 @@
         <activity
             android:name=".ContactUs"
             android:screenOrientation="portrait" />
-        <activity android:name=".DashBoardOrganization"
+        <activity
+            android:name=".DashBoardOrganization"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DrawerActvityForOrganization"/>
+        <activity android:name=".DrawerActvityForOrganization" />
+        <activity android:name=".SaleAnimals"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

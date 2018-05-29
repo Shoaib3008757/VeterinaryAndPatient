@@ -85,7 +85,7 @@
 
                     <TextView
                         android:id="@+id/tv_call_vert"
-                        android:text="Call Veterinarian"
+                        android:text="Call Veterinarian      "
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:textColor="@color/colorWhite"
@@ -127,10 +127,49 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
-                        android:text="Wild Life Sol"
+                        android:text="Wild Life Solution "
                         android:textAllCaps="false"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/bt_sale_other"
+                android:layout_width="180dp"
+                android:layout_height="@dimen/et_width"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_press_syle"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/imageView3"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="20dp"
+                        app:srcCompat="@drawable/ic_others"/>
+
+                    <TextView
+                        android:id="@+id/tv_sale_other"
+                        android:text="Sale Wild Animals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorWhite"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:layout_centerInParent="true"/>
 
 
 

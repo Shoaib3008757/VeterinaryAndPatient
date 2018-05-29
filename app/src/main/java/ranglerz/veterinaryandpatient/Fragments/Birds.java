@@ -6,20 +6,27 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import ranglerz.veterinaryandpatient.CallVetForDairy;
 import ranglerz.veterinaryandpatient.FarmSolutionForBirds;
 import ranglerz.veterinaryandpatient.FarmSolutionForDairy;
+import ranglerz.veterinaryandpatient.OrganizationOfferJobsActivity;
 import ranglerz.veterinaryandpatient.R;
+import ranglerz.veterinaryandpatient.SaleAnimals;
 
 public class Birds extends Fragment {
 
     Spinner sp_select_bird;
-    RelativeLayout bt_call_a_veteriany, bt_farm_solutino;
+    RelativeLayout bt_call_a_veteriany, bt_farm_solutino, bt_sale_birds;
+    RelativeLayout rl_spiner;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,6 +46,7 @@ public class Birds extends Fragment {
         init(v);
         callingVeterinaryActivity();
         farmSolutionActivity();
+        btSaleBirdClickHanlder();
 
         return v;
     }
@@ -48,6 +56,9 @@ public class Birds extends Fragment {
         sp_select_bird = (Spinner) view.findViewById(R.id.sp_select_bird);
         bt_call_a_veteriany = (RelativeLayout) view.findViewById(R.id.bt_call_a_veteriany);
         bt_farm_solutino = (RelativeLayout) view.findViewById(R.id.bt_farm_solutino);
+        bt_sale_birds = (RelativeLayout) view.findViewById(R.id.bt_sale_birds);
+
+        rl_spiner = (RelativeLayout) view.findViewById(R.id.rl_spiner);
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(),
                 R.array.birds_categories, R.layout.spinner_item);
@@ -78,6 +89,31 @@ public class Birds extends Fragment {
                 Intent farmSolution = new Intent(getActivity(), FarmSolutionForBirds.class);
                 farmSolution.putExtra("from", "dairy");
                 getActivity().startActivity(farmSolution);
+            }
+        });
+    }
+
+    private void btSaleBirdClickHanlder(){
+
+        bt_sale_birds.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                final Animation animShake = AnimationUtils.loadAnimation(getActivity(), R.anim.shake);
+
+                int item_position = sp_select_bird.getSelectedItemPosition();
+                if (item_position == 0){
+                    ((TextView)sp_select_bird.getSelectedView()).setError("Please Select Category");
+                    rl_spiner.setAnimation(animShake);
+
+                }else {
+                String selectedItem = sp_select_bird.getSelectedItem().toString();
+                Intent i = new Intent(getActivity(), SaleAnimals.class);
+                i.putExtra("type", "Bird");
+                i.putExtra("item", selectedItem);
+                startActivity(i);
+
+            }
             }
         });
     }

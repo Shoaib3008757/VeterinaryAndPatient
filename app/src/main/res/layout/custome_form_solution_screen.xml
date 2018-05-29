@@ -161,7 +161,7 @@
                         android:id="@+id/iv_veccination"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@drawable/ic_vaccination"/>
+                        app:srcCompat="@drawable/ic_milkingmachine"/>
 
                     <TextView
                         android:id="@+id/bt_veccinatin"
@@ -438,7 +438,6 @@
                     android:layout_marginRight="5dp"
                     android:background="@drawable/button_press_syle">
 
-
                     <android.support.v7.widget.AppCompatImageView
                         android:id="@+id/iv_crops_seed"
                         android:layout_width="20dp"
@@ -456,8 +455,6 @@
                         android:layout_centerInParent="true"
                         android:textColor="@color/colorWhite"
                         android:textAlignment="center"/>
-
-
 
                 </RelativeLayout>
 

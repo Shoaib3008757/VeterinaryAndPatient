@@ -12,14 +12,13 @@
         <item>DVM</item>
     </string-array>
 
-
     <string-array name="product_types">
         <item>Select Product Type</item>
-        <item>Dairy Solution</item>
-        <item>Pet Solution</item>
-        <item>Equine Solution</item>
-        <item>Birds Solution</item>
-        <item>Wild Life Solution</item>
+        <item>Dairy Sale</item>
+        <item>Pet Sale</item>
+        <item>Equine Sale</item>
+        <item>Birds Sale</item>
+        <item>Wild Life Sale</item>
 
     </string-array>
 
@@ -143,7 +142,7 @@
         <item>Select Sub Category</item>
         <item>Mobile Machines</item>
         <item>Milking rows</item>
-        <item>Milking Machines</item>
+        <item>Milking Parlour</item>
         <item>Spare Parts</item>
         <item>Acid/Alkali For CIP</item>
         <item>Teat Dip Solutions</item>
@@ -252,6 +251,7 @@
         <item>Buffalo</item>
         <item>Sheep</item>
         <item>Goat</item>
+        <item>Camel</item>
     </string-array>
 
     <string-array name="pets_categories">

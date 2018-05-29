@@ -343,7 +343,7 @@
                         android:id="@+id/iv_agricultur_land"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@drawable/ic_agriculturallands"/>
+                        app:srcCompat="@drawable/ic_eggs"/>
 
                     <TextView
                         android:id="@+id/tv_labour"
@@ -374,7 +374,7 @@
                         android:id="@+id/iv_pesticides"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:srcCompat="@drawable/ic_pesticides"/>
+                        app:srcCompat="@drawable/ic_shedforrent"/>
 
                     <TextView
                         android:id="@+id/bt_pesticide"

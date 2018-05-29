@@ -27,7 +27,6 @@ public class DashBoardOrganization extends DrawerActvityForOrganization {
         mDrawerLayout.addView(contentView, 0);
         toolbar.setTitle("Organization");
 
-
         init();
         onClickLitenerForCheckupRequests();
         onClickLitenerForOfferJobs();

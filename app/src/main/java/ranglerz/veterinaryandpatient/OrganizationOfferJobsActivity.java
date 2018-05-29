@@ -38,7 +38,6 @@ public class OrganizationOfferJobsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         init();
         onSubmitButtonClickHanlder();
-
     }
 
     private void init(){
