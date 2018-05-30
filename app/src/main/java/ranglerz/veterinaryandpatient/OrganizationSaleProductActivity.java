@@ -448,7 +448,7 @@ public class OrganizationSaleProductActivity extends AppCompatActivity {
 
                     sp_select_product_category  = (Spinner) findViewById(R.id.sp_select_product_category);
                     ArrayAdapter adapterProductCategory = ArrayAdapter.createFromResource(OrganizationSaleProductActivity.this,
-                            R.array.product_categories_for_dairy, R.layout.spinner_item);
+                            R.array.product_categories_for_dairy_organization, R.layout.spinner_item);
                     adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                     sp_select_product_category.setAdapter(adapterProductCategory);
                     rl_spiner_product_category.setVisibility(View.VISIBLE);
@@ -458,7 +458,7 @@ public class OrganizationSaleProductActivity extends AppCompatActivity {
 
                     sp_select_product_category  = (Spinner) findViewById(R.id.sp_select_product_category);
                     ArrayAdapter adapterProductCategory = ArrayAdapter.createFromResource(OrganizationSaleProductActivity.this,
-                            R.array.product_categories_for_pets, R.layout.spinner_item);
+                            R.array.product_categories_for_pets_organization, R.layout.spinner_item);
                     adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                     sp_select_product_category.setAdapter(adapterProductCategory);
                     rl_spiner_product_category.setVisibility(View.VISIBLE);
@@ -470,7 +470,7 @@ public class OrganizationSaleProductActivity extends AppCompatActivity {
 
                     sp_select_product_category  = (Spinner) findViewById(R.id.sp_select_product_category);
                     ArrayAdapter adapterProductCategory = ArrayAdapter.createFromResource(OrganizationSaleProductActivity.this,
-                            R.array.product_categories_for_equine, R.layout.spinner_item);
+                            R.array.product_categories_for_equine_organization, R.layout.spinner_item);
                     adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                     sp_select_product_category.setAdapter(adapterProductCategory);
                     rl_spiner_product_category.setVisibility(View.VISIBLE);
@@ -482,7 +482,7 @@ public class OrganizationSaleProductActivity extends AppCompatActivity {
 
                     sp_select_product_category  = (Spinner) findViewById(R.id.sp_select_product_category);
                     ArrayAdapter adapterProductCategory = ArrayAdapter.createFromResource(OrganizationSaleProductActivity.this,
-                            R.array.product_categories_for_bird, R.layout.spinner_item);
+                            R.array.product_categories_for_bird_organization, R.layout.spinner_item);
                     adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                     sp_select_product_category.setAdapter(adapterProductCategory);
                     rl_spiner_product_category.setVisibility(View.VISIBLE);
@@ -494,7 +494,7 @@ public class OrganizationSaleProductActivity extends AppCompatActivity {
 
                     sp_select_product_category  = (Spinner) findViewById(R.id.sp_select_product_category);
                     ArrayAdapter adapterProductCategory = ArrayAdapter.createFromResource(OrganizationSaleProductActivity.this,
-                            R.array.product_categories_for_other, R.layout.spinner_item);
+                            R.array.product_categories_for_other_organization, R.layout.spinner_item);
                     adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                     sp_select_product_category.setAdapter(adapterProductCategory);
                     rl_spiner_product_category.setVisibility(View.VISIBLE);

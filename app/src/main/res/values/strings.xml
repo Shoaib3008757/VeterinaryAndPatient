@@ -52,6 +52,25 @@
 
     </string-array>
 
+    <string-array name="product_categories_for_dairy_organization">
+        <item>Select Category</item>
+        <item>Accessories</item>
+        <item>Feed</item>
+        <item>Animals (sale &amp; pur)</item>
+        <item>Milking Machine</item>
+        <item>Medicine Products</item>
+        <item>Shed Constructions</item>
+        <item>Labs</item>
+        <item>Labour</item>
+        <item>Land On Rent</item>
+        <item>Sprays</item>
+        <item>Milk (sale &amp; purc)</item>
+        <item>Labour</item>
+        <item>Dairy Crops Seed</item>
+
+
+    </string-array>
+
 
     <string-array name="product_categories_for_pets">
         <item>Select Category</item>
@@ -62,6 +81,25 @@
 
     </string-array>
 
+
+    <string-array name="product_categories_for_pets_organization">
+        <item>Select Category</item>
+        <item>Accessories</item>
+        <item>Feed</item>
+        <item>Pets (sale &amp; pur)</item>
+        <item>Veccinations</item>
+        <item>Medicine Products</item>
+        <item>Labour</item>
+        <item>Cages/Housing Const</item>
+        <item>Labs</item>
+        <item>Labour</item>
+        <item>Pet Trainer</item>
+        <item>Breeder Services</item>
+
+    </string-array>
+
+
+
     <string-array name="product_categories_for_equine">
         <item>Select Category</item>
         <item>Equine (sale &amp; pur)</item>
@@ -71,8 +109,25 @@
     </string-array>
 
 
+    <string-array name="product_categories_for_equine_organization">
+        <item>Select Category</item>
+        <item>Accessories</item>
+        <item>Feed</item>
+        <item>Equine (sale &amp; pur)</item>
+        <item>Vaccinations</item>
+        <item>Medicine Products</item>
+        <item>Shed Construction</item>
+        <item>Labs</item>
+        <item>Labour</item>
+        <item>Horse Trainer</item>
+        <item>Breede Services</item>
+    </string-array>
+
+
+
     <string-array name="product_categories_for_bird">
         <item>Select Category</item>
+
         <item>Birds (sale &amp; pur)</item>
         <item>Labour</item>
         <item>Egg (sale &amp; pur)</item>
@@ -80,9 +135,40 @@
 
     </string-array>
 
+
+    <string-array name="product_categories_for_bird_organization">
+        <item>Select Category</item>
+        <item>Accessories</item>
+        <item>Feed</item>
+        <item>Birds (sale &amp; pur)</item>
+        <item>Veccinatios</item>
+        <item>Medicine Products</item>
+        <item>Cates/Shed Const</item>
+        <item>Labs</item>
+        <item>Labour</item>
+        <item>Egg (sale &amp; pur)</item>
+        <item>Shed for Rent</item>
+
+    </string-array>
+
+
     <string-array name="product_categories_for_other">
         <item>Select Category</item>
         <item>Animals (sale &amp; pur)</item>
+        <item>Labour</item>
+
+    </string-array>
+
+
+    <string-array name="product_categories_for_other_organization">
+        <item>Select Category</item>
+        <item>Acceesories</item>
+        <item>Feed</item>
+        <item>Animals (sale &amp; pur)</item>
+        <item>Vaccinations</item>
+        <item>Medicine Products</item>
+        <item>Aquariums Cages</item>
+        <item>Labs</item>
         <item>Labour</item>
 
     </string-array>
