@@ -110,19 +110,20 @@ public class FragmentDairy extends Fragment {
 
                 final Animation animShake = AnimationUtils.loadAnimation(getActivity(), R.anim.shake);
 
-                int item_position = sp_select_dairy_category.getSelectedItemPosition();
+           /*     int item_position = sp_select_dairy_category.getSelectedItemPosition();
                 if (item_position == 0){
                     ((TextView)sp_select_dairy_category.getSelectedView()).setError("Please Select Category");
                     rl_spiner.setAnimation(animShake);
 
-                }else {
-                    String selectedItem = sp_select_dairy_category.getSelectedItem().toString();
+                }else {*/
+
+                   // String selectedItem = sp_select_dairy_category.getSelectedItem().toString();
                     Intent i = new Intent(getActivity(), SaleAnimals.class);
                     i.putExtra("type", "Dairy");
-                    i.putExtra("item", selectedItem);
+                    //i.putExtra("item", selectedItem);
                     startActivity(i);
 
-                }
+                //}
             }
         });
     }

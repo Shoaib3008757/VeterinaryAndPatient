@@ -482,7 +482,7 @@ public class SaleAnimals extends AppCompatActivity {
                     if (i == 1){
 
                         ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_accesories, R.layout.spinner_item);
+                                R.array.product_sub_categories_for_dairy_animals, R.layout.spinner_item);
                         adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                         sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
 
@@ -490,7 +490,7 @@ public class SaleAnimals extends AppCompatActivity {
                     if (i == 2){
 
                         ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_feed, R.layout.spinner_item);
+                                R.array.product_sub_categories_for_dairy_milk_sale_pur, R.layout.spinner_item);
                         adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                         sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
 
@@ -498,7 +498,7 @@ public class SaleAnimals extends AppCompatActivity {
                     if (i == 3){
 
                         ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_animals, R.layout.spinner_item);
+                                R.array.product_sub_categories_for_dairy_labour, R.layout.spinner_item);
                         adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                         sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
 
@@ -506,75 +506,12 @@ public class SaleAnimals extends AppCompatActivity {
                     if (i == 4){
 
                         ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_milking_parlour, R.layout.spinner_item);
-                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
-                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
-
-                    }
-                    if (i == 5){
-
-                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_medicine_products, R.layout.spinner_item);
-                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
-                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
-
-                    }
-                    if (i == 6){
-
-                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_sheed_construction, R.layout.spinner_item);
-                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
-                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
-
-                    }
-                    if (i == 7){
-
-                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_labs, R.layout.spinner_item);
-                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
-                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
-
-                    }
-                    if (i == 8){
-
-                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_labour, R.layout.spinner_item);
-                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
-                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
-
-                    }
-                    if (i == 9){
-
-                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
                                 R.array.product_sub_categories_for_dairy_land_on_rent, R.layout.spinner_item);
                         adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
                         sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
 
                     }
-                    if (i == 10){
 
-                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_sprays, R.layout.spinner_item);
-                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
-                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
-
-                    }
-                    if (i == 11){
-
-                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_milk_sale_pur, R.layout.spinner_item);
-                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
-                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
-
-                    }
-                    if (i == 12){
-
-                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
-                                R.array.product_sub_categories_for_dairy_crops_seed, R.layout.spinner_item);
-                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
-                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
-
-                    }
                 }
 
 

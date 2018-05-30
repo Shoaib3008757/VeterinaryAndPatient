@@ -91,19 +91,12 @@ public class FregamentEquin extends Fragment {
 
                 final Animation animShake = AnimationUtils.loadAnimation(getActivity(), R.anim.shake);
 
-                int item_position = sp_select_equin.getSelectedItemPosition();
-                if (item_position == 0){
-                    ((TextView)sp_select_equin.getSelectedView()).setError("Please Select Category");
-                    rl_spiner.setAnimation(animShake);
 
-                }else {
                     String selectedItem = sp_select_equin.getSelectedItem().toString();
                     Intent i = new Intent(getActivity(), SaleAnimals.class);
                     i.putExtra("type", "Equine");
-                    i.putExtra("item", selectedItem);
                     startActivity(i);
 
-                }
             }
         });
     }

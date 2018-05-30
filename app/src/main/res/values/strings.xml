@@ -14,61 +14,48 @@
 
     <string-array name="product_types">
         <item>Select Product Type</item>
-        <item>Dairy Sale</item>
-        <item>Pet Sale</item>
-        <item>Equine Sale</item>
-        <item>Birds Sale</item>
-        <item>Wild Life Sale</item>
+        <item>Dairy Solution</item>
+        <item>Pet Solution</item>
+        <item>Equine Solution</item>
+        <item>Birds Solution</item>
+        <item>Wild Life Solution</item>
 
     </string-array>
 
     <string-array name="only_dairy">
-        <item>Dairy Sale</item>
+        <item>Dairy Solution</item>
     </string-array>
 
     <string-array name="only_pet">
-        <item>Pet Sale</item>
+        <item>Pet Solution</item>
     </string-array>
 
     <string-array name="only_equine">
-        <item>Equine Sale</item>
+        <item>Equine Solution</item>
     </string-array>
 
     <string-array name="only_bird">
-        <item>Bird Sale</item>
+        <item>Bird Solution</item>
     </string-array>
 
     <string-array name="only_wild_life">
-        <item>Wild Life Sale</item>
+        <item>Wild Life Solution</item>
     </string-array>
 
     <string-array name="product_categories_for_dairy">
         <item>Select Category</item>
-        <item>Accesories</item>
-        <item>Feed</item>
         <item>Animals (sale &amp; pur)</item>
-        <item>Milking Machines</item>
-        <item>Medicine Products</item>
-        <item>Shed Constructions</item>
-        <item>Labs</item>
+        <item>Milk (sale &amp; purc)</item>
         <item>Labour</item>
         <item>Land on Rent</item>
-        <item>Sprays</item>
-        <item>Milk (sale &amp; purc)</item>
-        <item>Dairy Crops Seed</item>
+
 
     </string-array>
 
 
     <string-array name="product_categories_for_pets">
         <item>Select Category</item>
-        <item>Accesories</item>
-        <item>Feed</item>
         <item>Pets (sale &amp; pur)</item>
-        <item>Vaccination</item>
-        <item>Medicine Products</item>
-        <item>Shed Constructions</item>
-        <item>Labs</item>
         <item>Labour</item>
         <item>Pet Trainer</item>
         <item>Breeder Services</item>
@@ -77,13 +64,7 @@
 
     <string-array name="product_categories_for_equine">
         <item>Select Category</item>
-        <item>Accesories</item>
-        <item>Feed</item>
         <item>Equine (sale &amp; pur)</item>
-        <item>Vaccinations</item>
-        <item>Medicine Products</item>
-        <item>Shed Constructions</item>
-        <item>Labs</item>
         <item>Labour</item>
         <item>Horse Trainer</item>
         <item>Breede Services</item>
@@ -92,13 +73,7 @@
 
     <string-array name="product_categories_for_bird">
         <item>Select Category</item>
-        <item>Accesories</item>
-        <item>Feed</item>
         <item>Birds (sale &amp; pur)</item>
-        <item>Vaccination</item>
-        <item>Medicine Products</item>
-        <item>Cages/Sheds Cons</item>
-        <item>Labs</item>
         <item>Labour</item>
         <item>Egg (sale &amp; pur)</item>
         <item>Shed for Rent</item>
@@ -107,13 +82,7 @@
 
     <string-array name="product_categories_for_other">
         <item>Select Category</item>
-        <item>Accesories</item>
-        <item>Feed</item>
         <item>Animals (sale &amp; pur)</item>
-        <item>Vaccination</item>
-        <item>Medicine Products</item>
-        <item>Shed Constructions</item>
-        <item>Labs</item>
         <item>Labour</item>
 
     </string-array>

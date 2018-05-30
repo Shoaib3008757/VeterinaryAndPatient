@@ -101,19 +101,12 @@ public class Birds extends Fragment {
 
                 final Animation animShake = AnimationUtils.loadAnimation(getActivity(), R.anim.shake);
 
-                int item_position = sp_select_bird.getSelectedItemPosition();
-                if (item_position == 0){
-                    ((TextView)sp_select_bird.getSelectedView()).setError("Please Select Category");
-                    rl_spiner.setAnimation(animShake);
-
-                }else {
                 String selectedItem = sp_select_bird.getSelectedItem().toString();
                 Intent i = new Intent(getActivity(), SaleAnimals.class);
                 i.putExtra("type", "Bird");
-                i.putExtra("item", selectedItem);
                 startActivity(i);
 
-            }
+
             }
         });
     }
