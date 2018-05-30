@@ -22,6 +22,26 @@
 
     </string-array>
 
+    <string-array name="only_dairy">
+        <item>Dairy Sale</item>
+    </string-array>
+
+    <string-array name="only_pet">
+        <item>Pet Sale</item>
+    </string-array>
+
+    <string-array name="only_equine">
+        <item>Equine Sale</item>
+    </string-array>
+
+    <string-array name="only_bird">
+        <item>Bird Sale</item>
+    </string-array>
+
+    <string-array name="only_wild_life">
+        <item>Wild Life Sale</item>
+    </string-array>
+
     <string-array name="product_categories_for_dairy">
         <item>Select Category</item>
         <item>Accesories</item>

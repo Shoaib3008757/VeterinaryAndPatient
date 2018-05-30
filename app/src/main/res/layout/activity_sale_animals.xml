@@ -25,7 +25,7 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/rl_animal_name"
+                    android:id="@+id/rl_spiner_product_type"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/et_width"
                     android:layout_marginTop="20dp"
@@ -33,18 +33,18 @@
                     android:layout_marginRight="30dp"
                     android:background="@drawable/spiner_background">
 
-                    <TextView
-                        android:id="@+id/tv_animal_name"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:text="Animal Tyoe"
-                        android:textColor="@color/colorWhite"/>
+                    <Spinner
+                        android:id="@+id/sp_select_product_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:backgroundTint="@color/colorWhite"
+                        android:entries="@array/product_types"
+                        android:paddingLeft="4dp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/rl_animal_type"
+                    android:id="@+id/rl_spiner_product_category"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/et_width"
                     android:layout_marginTop="10dp"
@@ -53,13 +53,36 @@
                     android:animateLayoutChanges="true"
                     android:background="@drawable/spiner_background">
 
-                    <TextView
-                        android:id="@+id/animal_type"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:text="Animal category"
-                        android:textColor="@color/colorWhite"/>
+                    <Spinner
+                        android:id="@+id/sp_select_product_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:backgroundTint="@color/colorWhite"
+                        android:entries="@array/product_categories"
+                        android:paddingLeft="4dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_spiner_product_sub_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_width"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:animateLayoutChanges="true"
+                    android:background="@drawable/spiner_background">
+
+                    <Spinner
+                        android:id="@+id/sp_select_product_sub_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:backgroundTint="@color/colorWhite"
+                        android:entries="@array/product_categories_for_dairy"
+                        android:paddingLeft="4dp"
+                        android:scrollbarThumbVertical="@drawable/scrollview_thumb"
+                        android:scrollbarTrackVertical="@drawable/vertical_scrollview_traack"/>
 
 
                 </RelativeLayout>

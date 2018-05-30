@@ -17,10 +17,13 @@ import android.view.View;
 import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,13 +31,17 @@ import ranglerz.veterinaryandpatient.utils.Permissions;
 
 public class SaleAnimals extends AppCompatActivity {
 
-    TextView tv_animal_name, animal_type;
+   // TextView tv_animal_name, animal_type;
     EditText et_product_price;
     RelativeLayout rl_image_1, rl_image_2, rl_image_3, rl_image_4;
     ImageView tv_image_1, tv_image_2, tv_image_3, tv_image_4;
     TextView tx_image_1, tx_image_2, tx_image_3, tx_image_4;
     EditText et_product_description;
     RelativeLayout rl_bt_post;
+
+    RelativeLayout rl_spiner_product_type, rl_spiner_product_category, rl_spiner_product_sub_category;
+    Spinner sp_select_product_type, sp_select_product_category, sp_select_product_sub_category;
+
 
     private int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     Uri imageUri = null;
@@ -52,15 +59,26 @@ public class SaleAnimals extends AppCompatActivity {
         getImage4();
 
         postButtonClickHandler();
+        spCategorySelectorHandler();
     }
 
     private void init(){
 
-        tv_animal_name = (TextView) findViewById(R.id.tv_animal_name);
-        animal_type = (TextView) findViewById(R.id.animal_type);
+        //tv_animal_name = (TextView) findViewById(R.id.tv_animal_name);
+        //animal_type = (TextView) findViewById(R.id.animal_type);
 
         et_product_price = (EditText) findViewById(R.id.et_product_price);
         et_product_description = (EditText) findViewById(R.id.et_product_description);
+
+        rl_spiner_product_type = (RelativeLayout) findViewById(R.id.rl_spiner_product_type);
+        rl_spiner_product_category = (RelativeLayout) findViewById(R.id.rl_spiner_product_category);
+        rl_spiner_product_sub_category = (RelativeLayout) findViewById(R.id.rl_spiner_product_sub_category);
+
+        sp_select_product_type = (Spinner) findViewById(R.id.sp_select_product_type);
+        sp_select_product_category = (Spinner) findViewById(R.id.sp_select_product_category);
+        sp_select_product_sub_category = (Spinner) findViewById(R.id.sp_select_product_sub_category);
+
+
 
         rl_image_1 = (RelativeLayout) findViewById(R.id.rl_image_1);
         rl_image_2 = (RelativeLayout) findViewById(R.id.rl_image_2);
@@ -82,24 +100,101 @@ public class SaleAnimals extends AppCompatActivity {
         Intent i = getIntent();
         String animalType = i.getExtras().getString("type");
         String animalName = i.getExtras().getString("item");
-        animal_type.setText(animalName);
-        tv_animal_name.setText(animalType);
+
+        //animal_type.setText(animalName);
+        //tv_animal_name.setText(animalType);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(ContextCompat.getColor(SaleAnimals.this ,R.color.colorBlue)));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         if (animalType.equals("Dairy")){
             getSupportActionBar().setTitle("Sale Dairy");
+
+            sp_select_product_type  = (Spinner) findViewById(R.id.sp_select_product_type);
+            ArrayAdapter adapterProductType = ArrayAdapter.createFromResource(SaleAnimals.this,
+                    R.array.only_dairy, R.layout.spinner_item);
+            adapterProductType.setDropDownViewResource(R.layout.spinner_dropdown_item);
+            sp_select_product_type.setAdapter(adapterProductType);
+
+            sp_select_product_category  = (Spinner) findViewById(R.id.sp_select_product_category);
+            ArrayAdapter adapterProductCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                    R.array.product_categories_for_dairy, R.layout.spinner_item);
+            adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+            sp_select_product_category.setAdapter(adapterProductCategory);
+            rl_spiner_product_category.setVisibility(View.VISIBLE);
+
+            rl_spiner_product_sub_category.setVisibility(View.VISIBLE);
+
         }
         if (animalType.equals("Pet")){
             getSupportActionBar().setTitle("Sale Pet");
+
+            sp_select_product_type  = (Spinner) findViewById(R.id.sp_select_product_type);
+            ArrayAdapter adapterProductType = ArrayAdapter.createFromResource(SaleAnimals.this,
+                    R.array.only_pet, R.layout.spinner_item);
+            adapterProductType.setDropDownViewResource(R.layout.spinner_dropdown_item);
+            sp_select_product_type.setAdapter(adapterProductType);
+
+            sp_select_product_category  = (Spinner) findViewById(R.id.sp_select_product_category);
+            ArrayAdapter adapterProductCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                    R.array.product_categories_for_pets, R.layout.spinner_item);
+            adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+            sp_select_product_category.setAdapter(adapterProductCategory);
+
+            rl_spiner_product_sub_category.setVisibility(View.GONE);
+
+
         }
         if (animalType.equals("Equine")){
             getSupportActionBar().setTitle("Sale Equine");
+
+            sp_select_product_type  = (Spinner) findViewById(R.id.sp_select_product_type);
+            ArrayAdapter adapterProductType = ArrayAdapter.createFromResource(SaleAnimals.this,
+                    R.array.only_equine, R.layout.spinner_item);
+            adapterProductType.setDropDownViewResource(R.layout.spinner_dropdown_item);
+            sp_select_product_type.setAdapter(adapterProductType);
+
+            sp_select_product_category  = (Spinner) findViewById(R.id.sp_select_product_category);
+            ArrayAdapter adapterProductCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                    R.array.product_categories_for_equine, R.layout.spinner_item);
+            adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+            sp_select_product_category.setAdapter(adapterProductCategory);
+
+            rl_spiner_product_sub_category.setVisibility(View.GONE);
         }
         if (animalType.equals("Bird")){
             getSupportActionBar().setTitle("Sale Bird");
+
+            sp_select_product_type  = (Spinner) findViewById(R.id.sp_select_product_type);
+            ArrayAdapter adapterProductType = ArrayAdapter.createFromResource(SaleAnimals.this,
+                    R.array.only_bird, R.layout.spinner_item);
+            adapterProductType.setDropDownViewResource(R.layout.spinner_dropdown_item);
+            sp_select_product_type.setAdapter(adapterProductType);
+
+
+            sp_select_product_category  = (Spinner) findViewById(R.id.sp_select_product_category);
+            ArrayAdapter adapterProductCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                    R.array.product_categories_for_bird, R.layout.spinner_item);
+            adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+            sp_select_product_category.setAdapter(adapterProductCategory);
+
+            rl_spiner_product_sub_category.setVisibility(View.GONE);
+
+
         }
         if (animalType.equals("Other")){
             getSupportActionBar().setTitle("Sale Wild Animal");
+            sp_select_product_type  = (Spinner) findViewById(R.id.sp_select_product_type);
+            ArrayAdapter adapterProductType = ArrayAdapter.createFromResource(SaleAnimals.this,
+                    R.array.only_wild_life, R.layout.spinner_item);
+            adapterProductType.setDropDownViewResource(R.layout.spinner_dropdown_item);
+            sp_select_product_type.setAdapter(adapterProductType);
+
+            sp_select_product_category  = (Spinner) findViewById(R.id.sp_select_product_category);
+            ArrayAdapter adapterProductCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                    R.array.product_categories_for_other, R.layout.spinner_item);
+            adapterProductCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+            sp_select_product_category.setAdapter(adapterProductCategory);
+
+            rl_spiner_product_sub_category.setVisibility(View.GONE);
         }
 
 
@@ -373,6 +468,122 @@ public class SaleAnimals extends AppCompatActivity {
                 break;
         }
         return true;
+    }
+
+
+    private void spCategorySelectorHandler(){
+        sp_select_product_category.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+
+                    Log.e("TAg", "the selected item is: " + adapterView.getSelectedItem());
+
+                    if (i == 1){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_accesories, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 2){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_feed, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 3){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_animals, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 4){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_milking_parlour, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 5){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_medicine_products, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 6){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_sheed_construction, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 7){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_labs, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 8){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_labour, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 9){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_land_on_rent, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 10){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_sprays, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 11){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_milk_sale_pur, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                    if (i == 12){
+
+                        ArrayAdapter adapterProductSubCategory = ArrayAdapter.createFromResource(SaleAnimals.this,
+                                R.array.product_sub_categories_for_dairy_crops_seed, R.layout.spinner_item);
+                        adapterProductSubCategory.setDropDownViewResource(R.layout.spinner_dropdown_item);
+                        sp_select_product_sub_category.setAdapter(adapterProductSubCategory);
+
+                    }
+                }
+
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
     }
 
 }
